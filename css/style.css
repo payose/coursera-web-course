@@ -1,0 +1,73 @@
+body{
+	text-align: center;
+	color:  #353535;
+}
+
+*{
+	font-weight: 550;
+	box-sizing: border-box;
+}
+
+section{
+	width: 90%;
+	margin: auto;
+}
+
+.card p{
+	padding: 40px 20px 20px 20px;
+}
+
+#chicken{
+	background-color:magenta;
+}
+
+#salad{
+	background-color:brown;
+}
+
+#sushi{
+	background-color:pink;
+}
+
+/*********************MOBILE FIRST*****************/
+.card{
+	background-color:#d3d3d3;
+	margin: 20px;
+	border:2px solid #353535;
+	width: 90%;
+	display: relative;
+}
+
+.card span{
+	float: right;
+	border:2px solid #353535;
+	border-width:0 0 2px 2px;
+	width: 150px;
+	padding: 10px;
+}
+
+/**************VIEWPORT TABLET**************/
+@media (min-width: 768px) and (max-width: 991px){
+	section{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.card{
+		width: 42%;
+		float: none;
+		margin:4%
+	}
+
+	section div:last-child{
+		flex-grow:2;
+	}
+
+}
+
+
+/**************VIEWPORT DESKTOP**************/
+@media (min-width: 992px){
+	
+	section{display: flex;}
+}
